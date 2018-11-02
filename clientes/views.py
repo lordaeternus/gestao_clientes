@@ -9,7 +9,7 @@ def persons_list(request):
     persons = Person.objects.all()
     return render(request, 'person.html', {'persons': persons})
 
-
+#comentário Luciano
 @login_required
 def persons_new(request):
     form = PersonForm(request.POST or None, request.FILES or None)
