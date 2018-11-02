@@ -3,7 +3,10 @@ from django.contrib.auth import logout
 
 # TODO: Teste de todo
 def home(request):
-    return render(request, 'home.html')
+    a = 1
+    b  = 2
+    c = a + b
+    return render(request, 'home.html', {'c':c})
 
 # FIXME: Teste de fixme
 def my_logout(request):
